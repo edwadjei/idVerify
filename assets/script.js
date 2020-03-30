@@ -22,11 +22,12 @@ btn.addEventListener('click', ()=>{
     }else if (l == 8 && n == 8){
         type = x[1]
     }
-    else if (l==8 && isNaN(+id.charAt(0)) && n==7){
+    else if (l==8 && isNaN(+id.charAt(0)) && n==7 && (id.charAt(0)=='G'||id.charAt(0)=='H')){
         type = x[2]
     }else if (l==8 && n==6 && isNaN(+id.charAt(0)) && isNaN(+id.charAt(2)) ||
               l==8 && n==6 && isNaN(+id.charAt(0)) && isNaN(+id.charAt(1)) ||
-              l==10 && s==1 && isNaN(+id.charAt(8)) ||
+              (l==8 && isNaN(+id.charAt(0)) && n==7 && id.charAt(0)) ||
+              l==10 && s==1 && isNaN(+id.charAt(8)) || 
               l==5 && n==5 || l==6 && n==6 || l==7 && n==6 && isNaN(+id.charAt(0))
              ){ 
         type = x[4]  
